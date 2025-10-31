@@ -46,6 +46,7 @@ Bạn sẽ cần mở 2 cửa sổ terminal (hoặc 2 tab trong VS Code).
 ```bash
 python server_OpenPLC.py
 
-Tại Terminal 2 (Chạy Client/HMI):
+**Tại Terminal 2 (Chạy Client/HMI):**
 
+```bash
 python client_HMI.py
