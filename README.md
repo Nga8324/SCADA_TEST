@@ -1,6 +1,4 @@
-# Mô phỏng Hệ thống SCADA/PLC An toàn với Mã hóa AES
-
-Dự án này là một mô phỏng hệ thống điều khiển công nghiệp (PLC/HMI) viết bằng Python, tập trung vào việc bảo mật kênh truyền thông tin bằng mã hóa AES-256.
+# Mô phỏng hệ thống SCADA/PLC với Mã hóa AES
 
 ## Mô tả
 
@@ -9,7 +7,7 @@ Dự án bao gồm hai thành phần chính:
 1.  **`server_OpenPLC.py`**: Đóng vai trò là một **PLC (Programmable Logic Controller)**. Nó chạy một logic điều khiển (mô phỏng theo ngôn ngữ ST - Structured Text) để vận hành một hệ thống giả định (bơm, van, tuabin) và giám sát dòng điện.
 2.  **`client_HMI.py`**: Đóng vai trò là **HMI (Human-Machine Interface)**. Đây là giao diện cho phép người vận hành gửi các lệnh điều khiển (`START`, `STOP`) đến PLC và nhận dữ liệu trạng thái để giám sát.
 
-**Mục tiêu chính** của dự án là minh họa cách các lệnh và dữ liệu trạng thái có thể được mã hóa và giải mã bằng AES-CBG, đảm bảo rằng bất kỳ ai "nghe lén" trên mạng (man-in-the-middle) cũng không thể đọc hoặc giả mạo được dữ liệu.
+**Mục tiêu chính**: Nhóm muốn triển khai và kiểm chứng một giải pháp mã hóa AES-256 nhằm bảo mật kênh truyền thông tin liên lạc giữa HMI (Client) và PLC (Server) trong một hệ thống SCADA mô phỏng, đảm bảo tính bí mật và toàn vẹn của dữ liệu điều khiển.
 
 ## Tính năng chính
 
@@ -48,7 +46,6 @@ Bạn sẽ cần mở 2 cửa sổ terminal (hoặc 2 tab trong VS Code).
 ```bash
 python server_OpenPLC.py
 
-**Tại Terminal 2 (Chạy Client/HMI):**
+Tại Terminal 2 (Chạy Client/HMI):
 
-```bash
 python client_HMI.py
