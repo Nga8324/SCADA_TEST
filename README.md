@@ -39,14 +39,16 @@ Dự án bao gồm hai thành phần chính:
 
 ### 3. Chạy Demo
 
-Bạn sẽ cần mở 2 cửa sổ terminal (hoặc 2 tab trong VS Code).
+Bạn sẽ cần mở 2 cửa sổ terminal (hoặc 2 tab / split terminal trong VS Code).
 
-**Tại Terminal 1 (Chạy Server/PLC):**
+Terminal 1 (Chạy Server/PLC):
 
 ```bash
 python server_OpenPLC.py
+```
 
-**Tại Terminal 2 (Chạy Client/HMI):**
+Terminal 2 (Chạy Client/HMI):
 
 ```bash
 python client_HMI.py
+```
